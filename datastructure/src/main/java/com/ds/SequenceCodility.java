@@ -1,6 +1,6 @@
 //Hit compile and run to see a sample output.
 //Read values from stdin, do NOT hard code input.
-package  com.ds;
+package com.ds;
 import java.io.*;
 import java.util.*;
 import java.text.*;
