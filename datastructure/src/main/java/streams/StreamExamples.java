@@ -23,6 +23,9 @@ public class StreamExamples {
 		filter(list.stream());
 		count( list.stream());
 		average( list.stream());
+
+
+
 	}
 	
 

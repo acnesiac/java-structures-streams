@@ -10,10 +10,10 @@ public class Client {
         group.getLines().add(new Line());
         group.getLines().add(new Line());
 
-        group.getRectangles().add(new Rectangle());
-        group.getRectangles().add(new Rectangle());
-        group.getRectangles().add(new Rectangle());
-        group.getRectangles().add(new Rectangle());
+//        group.getRectangles().add(new Rectangle());
+//        group.getRectangles().add(new Rectangle());
+//        group.getRectangles().add(new Rectangle());
+//        group.getRectangles().add(new Rectangle());
 
         // draw everything
         group.draw();

@@ -8,9 +8,9 @@ public class InterpreterExample {
         String expression = "w x z - +";
         Evaluator sentence = new Evaluator(expression);
         Map<String,Expression> variables = new HashMap<String,Expression>();
-        variables.put("w", new java.lang.Number(5));
-        variables.put("x", new java.lang.Number(10));
-        variables.put("z", new java.lang.Number(42));
+//        variables.put("w", 5);
+//        variables.put("x", 10);
+//        variables.put("z", 42);
         int result = sentence.interpret(variables);
         System.out.println(result);
     }
