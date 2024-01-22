@@ -1,9 +1,5 @@
 public class AlgorithmSumNumbersPower {
     public static void main(String[] args) {
-//        Find the number of ways that a given integer, , can be expressed as the sum of the  powers of unique, natural numbers.
-//
-//                For example, if  and , we have to find all combinations of unique squares adding up to . The only solution is .
-//
 //        Function Description
 //
 //        Complete the powerSum function in the editor below. It should return an integer that represents the number of possible combinations.
