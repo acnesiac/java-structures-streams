@@ -15,7 +15,6 @@ public class CounterWords {
         for(int i= 0 ; i < str.length ; i ++){
             if(!hm.containsKey(str[i])){
                 hm.put(str[i],1);
-
             }
             else{
                 String s =str[i];
@@ -23,7 +22,6 @@ public class CounterWords {
                 hm.put(str[i], ++val );
             }
         }
-
         return hm;
     }
 }
