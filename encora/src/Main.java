@@ -12,6 +12,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
+
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new StringReader("Dec 01 06 - Dec 05 12\nDec 08 00 - Dec 12 24\nDec 29 00 - Dec 30 24"));
         String str =null;

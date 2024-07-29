@@ -36,8 +36,8 @@ public class MergeSort {
 		
 		// merge small problems and sort
 		void MergePart(int LowerIndex,int middle,int HigherIndex ){
-		 for(int i=LowerIndex;i<=HigherIndex;i++)	
-			 TempArray[i]= array[i];
+            if (HigherIndex + 1 - LowerIndex >= 0)
+                System.arraycopy(array, LowerIndex, TempArray, LowerIndex, HigherIndex + 1 - LowerIndex);
 		 int i=LowerIndex;
 		 int j=middle+1;
 		 int  k=LowerIndex;

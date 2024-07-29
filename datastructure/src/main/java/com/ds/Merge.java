@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Merge {
 
-    public static void main( String args[]){
+    public static void main(String[] args){
       Merge m = new Merge();
 //      m.merge();
       m.count();
