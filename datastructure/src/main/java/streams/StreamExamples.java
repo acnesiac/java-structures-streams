@@ -1,8 +1,5 @@
 package streams;
-import java.util.List;
-import java.util.Optional;
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -11,20 +8,25 @@ public class StreamExamples {
 	public static void main(String[] args) {		
 		// 
 		int[] values  = {1,2,4,4};
-		max(IntStream.of(values));
-		map(IntStream.of(values));
-		filter(IntStream.of(values));
-		count(IntStream.of(values));
-		average(IntStream.of(values));
-		// 
-		List<Integer> list = IntStream.of(values).boxed().collect(Collectors.toList());
-		map(list.stream());
-		max(list.stream());
-		filter(list.stream());
-		count( list.stream());
-		average( list.stream());
 
+		//		max(IntStream.of(values));
+//		map(IntStream.of(values));
+//		filter(IntStream.of(values));
+//		count(IntStream.of(values));
+//		average(IntStream.of(values));
+//		//
+//		List<Integer> list = IntStream.of(values).boxed().collect(Collectors.toList());
+//		map(list.stream());
+//		max(list.stream());
+//		filter(list.stream());
+//		count( list.stream());
+//		average( list.stream());
 
+		int [] arr1 = {1,2,3,4,5,5};
+		IntStream intStream = Arrays.stream(arr1).map((n) -> n + 2);
+		//intStream.forEach(System.out::println);
+		int asInt = Arrays.stream(arr1).reduce(Integer::sum).getAsInt();
+		System.out.println(asInt);
 
 	}
 	

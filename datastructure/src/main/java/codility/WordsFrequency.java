@@ -24,8 +24,7 @@ public class WordsFrequency {
             }
         }
 
-        hm.entrySet().stream()
-                .map(Map.Entry::getValue)
+        hm.entrySet()
                 .forEach(
                         System.out::println
                 );

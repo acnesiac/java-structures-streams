@@ -25,7 +25,10 @@ public class StreamPersons {
 		persons.add(new Person("A",19));
 		persons.add(new Person("A",19));
 		persons.add(new Person("B",20));
-		
+
+		Map<Integer, Set<Person>> collect1 = persons.stream().collect(Collectors.groupingBy(p -> p.age, Collectors.toSet()));
+		collect1
+				.forEach((age, p) -> System.out.format("age %s: %s\n", age, p));
 		//filter( persons.stream() );
 		//groupby( persons.stream() );
 

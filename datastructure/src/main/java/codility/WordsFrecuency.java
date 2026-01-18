@@ -1,28 +1,33 @@
 package codility;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class WordsFrecuency {
     public static void main(String[] args) {
-        HashMap<String,Integer> hm = new HashMap<String, Integer>();
-        List<String> l = Arrays.asList("s","s","a","a");
-        for (String a : l
-             ) {
-            if (!hm.containsKey(a)){
-                hm.put(a,1);
-            }else{
-                Integer i = hm.get(a);
-                ++i;
-                hm.put(a,i);
+
+        List<Integer> list = Arrays.asList(1,1,1,1,1, 2, 3, 4, 5, 5,5,5,5,5,5);
+        HashMap <Integer,Integer> hm = new HashMap<>();
+        for ( int i : list) {
+            if (!hm.containsKey(i)){
+               hm.put(i,1);
+
+            }
+            else {
+                Integer o = hm.get(i);
+                hm.put(i,++o);
             }
         }
 
 
+        LinkedHashMap sortedMap = new LinkedHashMap();
+        Set<Map.Entry<Integer, Integer>> set = hm.entrySet();
+        for (Map.Entry entry : set) {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
 
-       hm.keySet().stream().sorted((a,b)-> { return b.compareTo(a); }).forEach(
-               (v)->System.out.println( " Count : " + v)
-       );
+
+
+        System.out.println(sortedMap);
+
     }
 }
