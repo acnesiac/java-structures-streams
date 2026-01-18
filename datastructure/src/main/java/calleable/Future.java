@@ -8,8 +8,6 @@ public class Future {
 
     public static void main(String[] args){
         ExecutorService executorService = Executors.newSingleThreadExecutor();
-
-
 //
 //        executorService.submit(new Callable<>(){
 //            public Object call() throws Exception {
@@ -20,6 +18,4 @@ public class Future {
 
 //        System.out.println("future.get() = " + ((java.util.concurrent.Future) future).get());
     }
-
-
 }
