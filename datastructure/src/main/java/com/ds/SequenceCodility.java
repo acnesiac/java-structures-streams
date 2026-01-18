@@ -10,7 +10,7 @@ import java.util.regex.*;
 public class SequenceCodility {
 
 
-            public static void main(String args[] ) throws Exception {
+            public static void main(String[] args) throws Exception {
                 String thisLine = null;
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 while ((thisLine = br.readLine()) != null) {

@@ -10,7 +10,7 @@ public class PrimeNumbers {
 	private static int[] primes(int[] N) {
 		int[] counter = new int[N.length];
 		for (int i = 0; i < N.length; i++) {
-			if ( (N[i]%0==0) && ( 0 ==0) ){
+			if ((N[i] % 0 == 0)){
 				counter[i] = N[i];
 			}
 		}
