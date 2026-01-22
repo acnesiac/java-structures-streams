@@ -1,4 +1,4 @@
-package streams;
+package algorithms;
 
 import java.util.List;
 import java.util.Optional;

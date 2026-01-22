@@ -1,8 +1,7 @@
-package streams;
+package algorithms;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+
 public class StreamExamples {
 	
 	public static void main(String[] args) {		
