@@ -1,4 +1,3 @@
-package algorithms;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -18,6 +17,7 @@ class Person{
 }
 public class StreamPersons {
 	public static void main(String[] args) {
+
 		List<Person> persons = new ArrayList<Person>();
 		persons.add(new Person("A",18));
 		persons.add(new Person("C",18));
@@ -27,39 +27,19 @@ public class StreamPersons {
 		persons.add(new Person("B",20));
 
 		Map<Integer, Set<Person>> collect1 = persons.stream().collect(Collectors.groupingBy(p -> p.age, Collectors.toSet()));
-		collect1
-				.forEach((age, p) -> System.out.format("age %s: %s\n", age, p));
-		//filter( persons.stream() );
-		//groupby( persons.stream() );
-
+		collect1.forEach((age, p) -> System.out.format("age %s: %s\n", age, p));
 		Map<Integer, List<Person>> collect = persons.stream().collect(Collectors.groupingBy(p -> p.age));
-		//System.out.println(collect);
-
-		//persons.stream().filter(p -> p.age >= 19).forEach(System.out::println);
 
 		Queue<Person> q = new LinkedList<Person>();
 		q.add(new Person("A",1));
-
 		q.addAll(persons);
 
 		Set<Person> setpersons = new HashSet<Person>();
 		setpersons.addAll(persons);
 
-		//q.stream().forEach(System.out::println);
-
 		q.removeIf(p -> p.age < 19);
 		q.forEach(System.out::println);
 
-	}
-
-	private static void groupby(Stream<Person> stream) {
-		Map<Integer, List<Person>> collect = stream.collect(Collectors.groupingBy(p -> p.age));
-		collect
-	    .forEach((age, p) -> System.out.format("age %s: %s\n", age, p));
-	}
-
-	private static void filter(Stream<Person> stream) {
-		stream.filter(n -> n.name.equals("Adolfo")).forEach(System.out::println);		
 	}
 
 }
