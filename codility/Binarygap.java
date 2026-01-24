@@ -1,4 +1,3 @@
-package codility;
 
 
 public class Binarygap {
