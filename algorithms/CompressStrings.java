@@ -1,4 +1,3 @@
-package common;
 
 public class CompressStrings {
     public static void main(String[] args) {
